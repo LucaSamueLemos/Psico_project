@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Área do Paciente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Olá, [Nome do Paciente]!</h1>
+        <div id="registro-emocao">
+            <h2>Registrar Emoção</h2>
+            <form method="POST" action="/registrar_emocao">
+                <input type="text" id="emocao" name="emocao" placeholder="Como você está se sentindo hoje?" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+        <div id="questionario-area">
+            <h2>Questionário</h2>
+            </div>
+        <div id="calendario-registros">
+            <h2>Seus Registros e Consultas</h2>
+            </div>
+        <button onclick="logout()">Sair</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
